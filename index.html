@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Montserrat:wght@300;400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+
+            
+
+            <input  readonly type="text" class="display">
+            <button class="clr-btn">Clear</button>
+
+
+            <div class="limit">
+                
+                <input type="number" min="8" max="20" name="limit" id="range" class="range" placeholder="8" >
+                <label for="limit"></label>
+            </div>
+
+            
+            <div class="upperCase">
+                <input type="checkbox" name="input" id="upper">
+               <label for="upper">Add UpperCase</label>
+            </div>
+            <div class="lowerCase">
+                <input type="checkbox" name="input" id="lower">
+               <label for="lower">Add LowerCase</label>
+            </div>
+           
+            <div class="num">
+                <input type="checkbox" name="input" id="no">
+               <label for="no">Add Numbers</label>
+            </div>
+
+            <div class="symbolCase">
+                <input type="checkbox" name="input" id="sym" class="sym">
+                <label for="sym">Add Symbol</label>
+            </div>
+
+            <div class="strt">
+                <div class="strength">Strength:</div>
+                <div class="indicator"></div>
+            </div>
+           
+            
+            
+            <button class="btn">Generate Password</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
