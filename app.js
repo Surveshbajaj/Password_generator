@@ -162,8 +162,13 @@ gen.addEventListener("click",()=>{
     if(range.value <8 ){
         // alert ("Password must be more than or equal to eight characters.");
          remainingLength = (8 - arr.length);
-    }else{
-         remainingLength = (range.value - arr.length);
+    } 
+    else if(range.value>20){
+        alert('password should be between 8 to 20 characters');
+        remainingLength=12-(arr.length+4);  
+    }
+    else{
+        remainingLength = (range.value - arr.length);
     }
 
     for (let i = 0; i< remainingLength; i++) {
